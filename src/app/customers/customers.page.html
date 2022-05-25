@@ -1,0 +1,46 @@
+<ion-header>
+  <ion-toolbar color="customer">
+    <ion-title>customers</ion-title>
+  </ion-toolbar>
+
+  <ion-toolbar>
+    <ion-searchbar
+      placeholder="Buscar"
+      animated
+      (ionChange)="onSearchChange($event)"
+    ></ion-searchbar>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-list-header> Recent Conversations </ion-list-header>
+
+    <ion-refresher
+      slot="fixed"
+      (ionRefresh)="doRefresh($event)"
+      pullFactor="0.8"
+      pullMin="60"
+      pullMax="120"
+    >
+      <ion-refresher-content> </ion-refresher-content>
+    </ion-refresher>
+
+    <ion-item
+      [routerLink]="['/customer', user.id]"
+      *ngFor="let user of searchFilter"
+    >
+      <ion-avatar slot="start">
+        <img src="{{user.img}}" />
+      </ion-avatar>
+      <ion-label>
+        <h2>{{user.name}}</h2>
+        <h3>{{user.title}}</h3>
+        <p>{{user.content}}</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+  <ion-button [routerLink]="['/cities']" expand="block">
+    Go to Customers
+  </ion-button>
+</ion-content>

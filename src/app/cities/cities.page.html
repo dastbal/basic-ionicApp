@@ -1,0 +1,89 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>cities</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-row>
+    <ion-col
+      sizeXs="12"
+      (click)="presentAlert2()"
+      sizeSm="6"
+      sizeMd="4"
+      sizeLg="4"
+    >
+      <ion-card>
+        <img src="https://picsum.photos/600" alt="" />
+      </ion-card>
+    </ion-col>
+    <ion-col
+      sizeXs="12"
+      (click)="presentAlert()"
+      sizeSm="6"
+      sizeMd="4"
+      sizeLg="4"
+    >
+      <ion-card>
+        <img src="https://picsum.photos/600" alt="" />
+      </ion-card>
+    </ion-col>
+    <ion-col
+      sizeXs="12"
+      (click)="presentAlert()"
+      sizeSm="6"
+      sizeMd="4"
+      sizeLg="4"
+    >
+      <ion-card>
+        <img src="https://picsum.photos/600" alt="" />
+      </ion-card>
+    </ion-col>
+    <ion-col
+      sizeXs="12"
+      (click)="presentToast()"
+      (click)="presentAlert()"
+      sizeSm="6"
+      sizeMd="4"
+      sizeLg="4"
+    >
+      <ion-card>
+        <img src="https://picsum.photos/600" alt="" />
+      </ion-card>
+    </ion-col>
+    <ion-col
+      sizeXs="12"
+      (click)="presentToast()"
+      (click)="presentAlert()"
+      sizeSm="6"
+      sizeMd="4"
+      sizeLg="4"
+    >
+      <ion-card>
+        <img src="https://picsum.photos/600" alt="" />
+      </ion-card>
+    </ion-col>
+    <ion-col
+      sizeXs="12"
+      (click)="presentToast()"
+      (click)="presentAlert()"
+      sizeSm="6"
+      sizeMd="4"
+      sizeLg="4"
+    >
+      <ion-card>
+        <img src="https://picsum.photos/600" alt="" />
+      </ion-card>
+    </ion-col>
+  </ion-row>
+  <ion-button [routerLink]="['/login']" expand="block">
+    Go to login
+    <template
+      tdLoading="loadingTemplateRef"
+      tdLoadingType="circular"
+      tdLoadingMode="indeterminate"
+      tdLoadingStrategy="replace"
+    >
+    </template>
+  </ion-button>
+</ion-content>

@@ -74,6 +74,15 @@
   --ion-color-light-contrast-rgb: 0, 0, 0;
   --ion-color-light-shade: #d7d8da;
   --ion-color-light-tint: #f5f6f9;
+
+  /** customer **/
+  --ion-color-customer: #dc040f;
+	--ion-color-customer-rgb: 220,4,15;
+	--ion-color-customer-contrast: #ffffff;
+	--ion-color-customer-contrast-rgb: 255,255,255;
+	--ion-color-customer-shade: #c2040d;
+	--ion-color-customer-tint: #e01d27;
+
 }
 
 @media (prefers-color-scheme: dark) {
